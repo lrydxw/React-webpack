@@ -1,0 +1,1398 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%;
+  display: block;
+  border: none; }
+
+ul {
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px;
+  font-family: "微软雅黑"; }
+
+body {
+  font-size: 12px;
+  position: relative; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 210751 */
+  src: url("//at.alicdn.com/t/font_7tp9jiqgi9wo2yb9.eot");
+  src: url("//at.alicdn.com/t/font_7tp9jiqgi9wo2yb9.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_7tp9jiqgi9wo2yb9.woff") format("woff"), url("//at.alicdn.com/t/font_7tp9jiqgi9wo2yb9.ttf") format("truetype"), url("//at.alicdn.com/t/font_7tp9jiqgi9wo2yb9.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  #app > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.14rem; }
+    #app > div #section {
+      overflow: auto;
+      flex: 1;
+      display: flex; }
+      #app > div #section #titleContent {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        padding-top: 0rem;
+        font-size: 0.26rem; }
+        #app > div #section #titleContent .titleTop {
+          height: 0.8rem;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #app > div #section #titleContent .titleTop span {
+            display: block;
+            height: 1px;
+            width: 0.6rem;
+            background: #999; }
+        #app > div #section #titleContent .swiper-container {
+          width: 100%;
+          height: 4.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #app > div #section #titleContent .swiper-container .swiper-slide img {
+            width: 86%;
+            margin: 0 auto;
+            box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2); }
+      #app > div #section #Titledetil {
+        width: 100%;
+        height: 100%; }
+        #app > div #section #Titledetil .swiper-container {
+          width: 100%;
+          height: 100%; }
+          #app > div #section #Titledetil .swiper-container .swiper-pagination {
+            bottom: 0.36rem;
+            left: 1.3rem; }
+          #app > div #section #Titledetil .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 100%; }
+          #app > div #section #Titledetil .swiper-container .swiper-wrapper .swiper-slide p {
+            position: absolute;
+            z-index: 2;
+            font-size: 0.14rem;
+            bottom: 15%;
+            left: 8%;
+            color: #fff;
+            width: 84%;
+            height: 0.6rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid #fff; }
+        #app > div #section #Titledetil .back {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 95%;
+          padding-left: 5%;
+          height: 0.5rem;
+          z-index: 2;
+          font-size: 0.3rem;
+          color: #fff;
+          z-index: 2;
+          background: rgba(0, 0, 0, 0.1); }
+        #app > div #section #Titledetil .share {
+          position: absolute;
+          left: 0.9rem;
+          bottom: 0.36rem;
+          z-index: 2;
+          font-size: 0.24rem;
+          color: red;
+          z-index: 2; }
+      #app > div #section #designerContent {
+        font-family: '微软雅黑';
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto; }
+        #app > div #section #designerContent .designerTop {
+          width: 100%;
+          height: 2rem;
+          position: relative; }
+          #app > div #section #designerContent .designerTop > img {
+            width: 100%;
+            height: 2rem; }
+          #app > div #section #designerContent .designerTop .designerText {
+            position: absolute;
+            left: 0.2rem;
+            bottom: 0.1rem;
+            line-height: 0.2rem;
+            color: #fff; }
+            #app > div #section #designerContent .designerTop .designerText p:nth-of-type(2) {
+              font-size: 0.12rem; }
+            #app > div #section #designerContent .designerTop .designerText p:nth-of-type(3) {
+              font-size: 0.1rem; }
+        #app > div #section #designerContent .designerTab {
+          flex: 1;
+          width: 100%; }
+          #app > div #section #designerContent .designerTab .designTab_nav {
+            width: 100%;
+            height: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff; }
+            #app > div #section #designerContent .designerTab .designTab_nav li {
+              padding-bottom: 5px; }
+              #app > div #section #designerContent .designerTab .designTab_nav li:nth-of-type(1) {
+                text-align: right;
+                padding-bottom: 5px;
+                margin-right: 0.3rem; }
+              #app > div #section #designerContent .designerTab .designTab_nav li:nth-of-type(2) {
+                margin-left: 0.3rem; }
+            #app > div #section #designerContent .designerTab .designTab_nav .active {
+              border-bottom: 2px solid #fc3;
+              color: #fc3; }
+          #app > div #section #designerContent .designerTab .designTab_content {
+            width: 100%;
+            overflow: hidden; }
+            #app > div #section #designerContent .designerTab .designTab_content ul {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              width: 100%; }
+              #app > div #section #designerContent .designerTab .designTab_content ul li {
+                max-width: 49.5%;
+                height: 1.5rem;
+                margin-bottom: 0.04rem;
+                overflow: hidden;
+                position: relative; }
+                #app > div #section #designerContent .designerTab .designTab_content ul li:nth-of-type(6), #app > div #section #designerContent .designerTab .designTab_content ul li:nth-of-type(5) {
+                  margin-bottom: 0rem; }
+                #app > div #section #designerContent .designerTab .designTab_content ul li span {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  line-height: 1.5rem;
+                  font-weight: bold;
+                  background: rgba(0, 0, 0, 0.5);
+                  color: #fff; }
+      #app > div #section #brandContent {
+        font-family: '微软雅黑';
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto; }
+        #app > div #section #brandContent .brandHeader {
+          position: fixed;
+          z-index: 9999 !important;
+          width: 94%;
+          height: 0.45rem;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 3%; }
+          #app > div #section #brandContent .brandHeader i {
+            font-size: 0.2rem; }
+        #app > div #section #brandContent .brandTop {
+          width: 100%;
+          height: 1.5rem;
+          position: relative; }
+          #app > div #section #brandContent .brandTop .brandImg {
+            width: 100%;
+            height: 1.5rem;
+            overflow: hidden; }
+          #app > div #section #brandContent .brandTop .brandTip {
+            position: absolute;
+            left: 50%;
+            bottom: -0.3rem;
+            margin-left: -0.3rem;
+            z-index: 9999;
+            width: 0.6rem;
+            height: 0.6rem;
+            border: 0.02rem solid #fff;
+            border-radius: 50%;
+            overflow: hidden; }
+        #app > div #section #brandContent .brandIntro {
+          flex: 1;
+          width: 100%; }
+          #app > div #section #brandContent .brandIntro div {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5%;
+            position: relative; }
+            #app > div #section #brandContent .brandIntro div h3 {
+              width: 100%;
+              text-align: center; }
+            #app > div #section #brandContent .brandIntro div:nth-of-type(1) {
+              margin-top: 0.42rem;
+              padding-bottom: 0.5rem; }
+              #app > div #section #brandContent .brandIntro div:nth-of-type(1) p {
+                margin-top: 0.2rem;
+                text-align: center;
+                line-height: 0.27rem; }
+            #app > div #section #brandContent .brandIntro div:nth-of-type(2) {
+              margin-top: 0.2rem; }
+              #app > div #section #brandContent .brandIntro div:nth-of-type(2) p {
+                width: 100%;
+                margin-top: 0.2rem;
+                text-align: left;
+                line-height: 0.27rem; }
+            #app > div #section #brandContent .brandIntro div:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #eee;
+              transform-origin: 0 0;
+              transform: scaleY(0.5); }
+      #app > div #section #listContent {
+        font-family: "微软雅黑";
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: auto; }
+        #app > div #section #listContent .listTop {
+          background: #333;
+          position: fixed;
+          z-index: 9999 !important;
+          width: 94%;
+          height: 0.45rem;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          padding: 0 3%; }
+          #app > div #section #listContent .listTop i {
+            font-size: 0.24rem; }
+          #app > div #section #listContent .listTop p {
+            flex: 2;
+            font-size: 0.18rem;
+            text-align: center;
+            line-height: 0.45rem; }
+        #app > div #section #listContent .listCon {
+          width: 97%;
+          height: 100%;
+          margin-top: 0.5rem;
+          padding-left: 3%; }
+          #app > div #section #listContent .listCon li {
+            width: 100%;
+            height: 0.8rem;
+            display: flex;
+            align-items: center; }
+            #app > div #section #listContent .listCon li div:nth-of-type(1) {
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 0.1rem; }
+            #app > div #section #listContent .listCon li div:nth-of-type(2) {
+              flex: 1;
+              position: relative;
+              display: flex;
+              justify-content: space-between; }
+              #app > div #section #listContent .listCon li div:nth-of-type(2) p {
+                display: flex;
+                flex-direction: column; }
+                #app > div #section #listContent .listCon li div:nth-of-type(2) p span:nth-of-type(2) {
+                  font-size: 0.1rem;
+                  color: #999; }
+                #app > div #section #listContent .listCon li div:nth-of-type(2) p span:nth-of-type(3) {
+                  font-size: 0.1rem;
+                  color: #999;
+                  padding: 0.1rem 0; }
+                #app > div #section #listContent .listCon li div:nth-of-type(2) p:nth-of-type(2) {
+                  font-size: 0.1rem;
+                  color: #999;
+                  margin-right: 0.2rem; }
+              #app > div #section #listContent .listCon li div:nth-of-type(2):after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color: #eee;
+                transform-origin: 0 0;
+                transform: scaleY(0.5); }
+      #app > div #section #sheCon {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        #app > div #section #sheCon .sheHeader {
+          width: 100%;
+          height: 0.45rem;
+          display: flex;
+          justify-content: space-between;
+          background: #333; }
+          #app > div #section #sheCon .sheHeader li {
+            height: 0.45rem;
+            line-height: 0.45rem;
+            text-align: center;
+            color: #fff; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(1) {
+              line-height: 0.49rem;
+              margin-left: 0.1rem; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(4) {
+              line-height: 0.47rem;
+              margin-right: 0.13rem; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(2) {
+              line-height: 0.49rem;
+              margin-left: 0.8rem; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(3) {
+              line-height: 0.49rem;
+              margin-right: 0.8rem; }
+            #app > div #section #sheCon .sheHeader li span {
+              font-size: 0.18rem; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(2), #app > div #section #sheCon .sheHeader li:nth-of-type(3) {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              #app > div #section #sheCon .sheHeader li:nth-of-type(2) span, #app > div #section #sheCon .sheHeader li:nth-of-type(3) span {
+                font-size: 0.16rem;
+                display: block;
+                height: 0.45rem;
+                width: 0.45rem; }
+                #app > div #section #sheCon .sheHeader li:nth-of-type(2) span.active, #app > div #section #sheCon .sheHeader li:nth-of-type(3) span.active {
+                  border-bottom: 0.02rem solid #FFCC33;
+                  color: #FFCC33; }
+            #app > div #section #sheCon .sheHeader li:nth-of-type(1) span.iconfont, #app > div #section #sheCon .sheHeader li:nth-of-type(4) span.iconfont {
+              font-size: 0.2rem; }
+        #app > div #section #sheCon #sheDetial {
+          width: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          overflow: auto; }
+          #app > div #section #sheCon #sheDetial .sheContainer {
+            width: 100%;
+            flex: 1; }
+            #app > div #section #sheCon #sheDetial .sheContainer .conWrap {
+              width: 98%;
+              height: 3.65rem;
+              margin: 0 1% 0.2rem;
+              background-color: #fff; }
+              #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead {
+                width: 100%;
+                height: 0.5rem;
+                display: flex;
+                padding: 0.05rem 0; }
+                #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div {
+                  width: 0.5rem;
+                  height: 0.5rem; }
+                  #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(1) {
+                    overflow: hidden;
+                    border-radius: 50%; }
+                    #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(1) img {
+                      width: 100%;
+                      height: 100%; }
+                  #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(2) {
+                    width: 0.8rem;
+                    height: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.12rem;
+                    padding-left: 0.12rem;
+                    color: #ccc; }
+                    #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(2) span {
+                      flex: 1;
+                      line-height: 0.16rem; }
+                      #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(2) span:nth-of-type(1) {
+                        line-height: 0.27rem;
+                        font-size: 0.14rem;
+                        color: #666; }
+                  #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(3) {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding-right: 0.15rem; }
+                    #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conHead div:nth-of-type(3) span {
+                      border: 1px solid #ccc;
+                      padding: 0.03rem 0.07rem;
+                      border-radius: 0.04rem;
+                      color: #666; }
+              #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conSection {
+                width: 100%;
+                height: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                border-top: 0.01rem solid #ccc; }
+                #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conSection span {
+                  flex: 1;
+                  display: flex;
+                  align-items: center;
+                  font-weight: 900;
+                  text-indent: 0.15rem; }
+                #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conSection div {
+                  width: 96%;
+                  height: 2rem;
+                  margin-left: 2%; }
+                  #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conSection div img {
+                    width: 100%;
+                    height: 100%; }
+              #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conFooter {
+                width: 96%;
+                margin-left: 2%;
+                height: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; }
+                #app > div #section #sheCon #sheDetial .sheContainer .conWrap .conFooter li:nth-of-type(1) {
+                  margin-right: 0.1rem; }
+          #app > div #section #sheCon #sheDetial .sheContainer1 {
+            flex: 1; }
+            #app > div #section #sheCon #sheDetial .sheContainer1 header {
+              height: 0.3rem;
+              background: #efefef;
+              width: 98%;
+              font-size: 0.1rem;
+              line-height: 0.3rem;
+              padding-left: 2%; }
+            #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap {
+              width: 98%;
+              padding-left: 2%;
+              display: flex;
+              flex-direction: column; }
+              #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection {
+                width: 97%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0.07rem 2% 0.1rem 1%; }
+                #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .box {
+                  margin-left: 0.2rem;
+                  padding: 0.1rem 0;
+                  flex: 1;
+                  border-bottom: 1px solid #ccc;
+                  display: flex; }
+                #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .condiv1 {
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  border-radius: 50%;
+                  overflow: hidden; }
+                  #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .condiv1 img {
+                    width: 100%; }
+                #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .condiv {
+                  display: flex;
+                  flex-direction: column; }
+                  #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .condiv span {
+                    display: block;
+                    height: 0.24rem; }
+                    #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .condiv span:nth-of-type(2) {
+                      color: #ccc; }
+                #app > div #section #sheCon #sheDetial .sheContainer1 .conListWrap .conSection .sp1 {
+                  position: absolute;
+                  display: block;
+                  right: 0.1rem;
+                  top: 0.2rem;
+                  padding: 0.03rem 0.07rem;
+                  border: 1px solid #ccc;
+                  border-radius: 0.04rem;
+                  color: #666; }
+      #app > div #section .walk {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        overflow: auto; }
+        #app > div #section .walk #walkHeader {
+          width: 100%;
+          height: 0.45rem;
+          background: #333;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          z-index: 999; }
+          #app > div #section .walk #walkHeader input {
+            width: 2rem;
+            height: 0.28rem;
+            padding-left: 0.2rem;
+            border: none;
+            background: #000;
+            color: #999;
+            border-radius: 0.03rem;
+            margin-left: 0.2rem; }
+          #app > div #section .walk #walkHeader .xiao {
+            font-size: 0.2rem;
+            margin-right: 0.13rem; }
+          #app > div #section .walk #walkHeader .search {
+            position: absolute;
+            font-size: 0.2rem;
+            color: #fff;
+            top: 0.11rem;
+            left: 2.1rem; }
+        #app > div #section .walk .walkSelect {
+          margin-top: 0.55rem;
+          width: 100%;
+          background: #fff;
+          margin-bottom: 0.2rem; }
+          #app > div #section .walk .walkSelect ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; }
+            #app > div #section .walk .walkSelect ul li {
+              width: 25%;
+              display: flex;
+              flex-direction: column;
+              font-size: 0.14rem;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 0.05rem; }
+              #app > div #section .walk .walkSelect ul li img {
+                width: 0.4rem;
+                margin-bottom: 0.04rem; }
+        #app > div #section .walk .walkMain {
+          flex: 1;
+          background: #fff; }
+          #app > div #section .walk .walkMain .walkBanner {
+            width: 100%;
+            height: 2.5rem; }
+            #app > div #section .walk .walkMain .walkBanner a {
+              display: block;
+              width: 100%;
+              height: 2.5rem;
+              position: relative; }
+              #app > div #section .walk .walkMain .walkBanner a img {
+                width: 100%;
+                height: 100%; }
+              #app > div #section .walk .walkMain .walkBanner a .walkSend {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff; }
+                #app > div #section .walk .walkMain .walkBanner a .walkSend p:nth-child(1) {
+                  font-size: 0.22rem; }
+                #app > div #section .walk .walkMain .walkBanner a .walkSend p:nth-child(2) {
+                  font-size: 0.14rem;
+                  margin: 0.1rem 0;
+                  letter-spacing: 0.02rem; }
+                #app > div #section .walk .walkMain .walkBanner a .walkSend p:nth-child(3) {
+                  box-sizing: border-box;
+                  font-size: 0.14rem;
+                  border: 1px solid #fff;
+                  padding: 0.03rem 0.07rem; }
+          #app > div #section .walk .walkMain .swiper-container {
+            width: 100%;
+            height: 2.5rem;
+            margin-bottom: 0rem; }
+            #app > div #section .walk .walkMain .swiper-container .swiper-wrapper {
+              width: 100%;
+              height: 2.5rem;
+              display: flex;
+              justify-content: flex-start;
+              padding-left: 0.1rem; }
+              #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide {
+                width: 100%;
+                height: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide .swiper-img {
+                  padding-top: 0.1rem;
+                  width: 100%;
+                  height: 1.4rem; }
+                  #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide .swiper-img > img {
+                    width: 100%;
+                    height: 100%; }
+                #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide .swiper-txt {
+                  width: 100%;
+                  height: 0.9rem;
+                  margin-top: 0.1rem; }
+                  #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide .swiper-txt p {
+                    font-size: 0.14rem; }
+                    #app > div #section .walk .walkMain .swiper-container .swiper-wrapper .swiper-slide .swiper-txt p:nth-of-type(1) {
+                      margin-top: 0.05rem; }
+      #app > div #section .walkDetil {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        overflow: auto; }
+        #app > div #section .walkDetil #walkDetilHeader {
+          width: 100%;
+          height: 0.45rem;
+          background: #333;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          z-index: 999; }
+          #app > div #section .walkDetil #walkDetilHeader i {
+            font-size: 0.3rem;
+            color: #fff;
+            margin-left: 0.03rem;
+            margin-right: 0.1rem; }
+          #app > div #section .walkDetil #walkDetilHeader span {
+            font-size: 0.18rem; }
+        #app > div #section .walkDetil #walkDetilSelect {
+          margin-top: 0.45rem;
+          flex: 1; }
+          #app > div #section .walkDetil #walkDetilSelect #walkContent {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; }
+            #app > div #section .walkDetil #walkDetilSelect #walkContent div {
+              position: relative;
+              width: 48.7%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin: 0.05rem 0; }
+              #app > div #section .walkDetil #walkDetilSelect #walkContent div img {
+                width: 94%; }
+              #app > div #section .walkDetil #walkDetilSelect #walkContent div p {
+                line-height: 0.24rem; }
+      #app > div #section .shopping {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto; }
+        #app > div #section .shopping #shoppingHeader {
+          width: 100%;
+          height: 0.45rem;
+          background: #333;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          z-index: 999; }
+          #app > div #section .shopping #shoppingHeader i {
+            font-size: 0.3rem;
+            margin-left: 0.03rem;
+            border-radius: 50%; }
+            #app > div #section .shopping #shoppingHeader i:nth-of-type(2) {
+              font-size: 0.22rem;
+              margin-right: 0.1rem; }
+        #app > div #section .shopping #shoppingSelect {
+          margin-top: 0.45rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          overflow: auto; }
+          #app > div #section .shopping #shoppingSelect img {
+            width: 100%;
+            height: 4rem; }
+          #app > div #section .shopping #shoppingSelect .box {
+            flex: 1;
+            display: flex;
+            flex-direction: column; }
+            #app > div #section .shopping #shoppingSelect .box .p1 {
+              width: 94%;
+              margin-left: 3%;
+              height: 0.7rem;
+              font-size: 0.14rem;
+              display: flex;
+              align-items: center; }
+            #app > div #section .shopping #shoppingSelect .box .p2 {
+              width: 96%;
+              margin-left: 2%;
+              height: 0.665rem;
+              font-size: 0.16rem;
+              display: flex;
+              color: red; }
+            #app > div #section .shopping #shoppingSelect .box .p3 {
+              width: 94%;
+              margin-left: 3%;
+              color: #666;
+              height: 0.4rem; }
+            #app > div #section .shopping #shoppingSelect .box .btndiv {
+              flex: 1;
+              position: relative; }
+              #app > div #section .shopping #shoppingSelect .box .btndiv button {
+                position: absolute;
+                height: 0.45rem;
+                padding: 0 0.3rem;
+                border: none;
+                background: #000;
+                color: #fff;
+                font-size: 0.16rem;
+                right: 0;
+                bottom: 0; }
+      #app > div #section #My {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: #efefef; }
+        #app > div #section #My #MyHeader {
+          width: 100%;
+          height: 3rem; }
+          #app > div #section #My #MyHeader .headCon, #app > div #section #My #MyHeader .headCon_login {
+            height: 3rem;
+            width: 100%;
+            background: url(../img/mine_meg_bg.png);
+            display: flex;
+            flex-direction: column; }
+            #app > div #section #My #MyHeader .headCon > header, #app > div #section #My #MyHeader .headCon_login > header {
+              width: 100%;
+              height: 0.4rem;
+              color: #333;
+              display: flex;
+              justify-content: flex-end; }
+              #app > div #section #My #MyHeader .headCon > header span.iconfont, #app > div #section #My #MyHeader .headCon_login > header span.iconfont {
+                display: block;
+                width: 0.4rem;
+                height: 0.5rem;
+                font-size: 0.26rem;
+                line-height: 0.5rem;
+                text-align: center; }
+            #app > div #section #My #MyHeader .headCon > .loginBefore, #app > div #section #My #MyHeader .headCon > .loginAfter, #app > div #section #My #MyHeader .headCon_login > .loginBefore, #app > div #section #My #MyHeader .headCon_login > .loginAfter {
+              height: 2rem;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center; }
+              #app > div #section #My #MyHeader .headCon > .loginBefore.loginAfter, #app > div #section #My #MyHeader .headCon > .loginAfter.loginAfter, #app > div #section #My #MyHeader .headCon_login > .loginBefore.loginAfter, #app > div #section #My #MyHeader .headCon_login > .loginAfter.loginAfter {
+                display: none;
+                height: 2rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; }
+              #app > div #section #My #MyHeader .headCon > .loginBefore p, #app > div #section #My #MyHeader .headCon > .loginAfter p, #app > div #section #My #MyHeader .headCon_login > .loginBefore p, #app > div #section #My #MyHeader .headCon_login > .loginAfter p {
+                width: 100%;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                color: #333;
+                text-align: center;
+                font-size: 0.16rem; }
+              #app > div #section #My #MyHeader .headCon > .loginBefore div, #app > div #section #My #MyHeader .headCon > .loginAfter div, #app > div #section #My #MyHeader .headCon_login > .loginBefore div, #app > div #section #My #MyHeader .headCon_login > .loginAfter div {
+                height: 0.5rem;
+                display: flex;
+                justify-content: center; }
+                #app > div #section #My #MyHeader .headCon > .loginBefore div button, #app > div #section #My #MyHeader .headCon > .loginAfter div button, #app > div #section #My #MyHeader .headCon_login > .loginBefore div button, #app > div #section #My #MyHeader .headCon_login > .loginAfter div button {
+                  font-size: 0.16rem;
+                  width: 1rem;
+                  height: 0.3rem;
+                  line-height: 0.3rem;
+                  border: 1px solid #efefef;
+                  background: none;
+                  color: #333;
+                  outline: none;
+                  text-align: center; }
+                #app > div #section #My #MyHeader .headCon > .loginBefore div.div_login, #app > div #section #My #MyHeader .headCon > .loginAfter div.div_login, #app > div #section #My #MyHeader .headCon_login > .loginBefore div.div_login, #app > div #section #My #MyHeader .headCon_login > .loginAfter div.div_login {
+                  line-height: 0.5rem;
+                  color: #333; }
+            #app > div #section #My #MyHeader .headCon > footer, #app > div #section #My #MyHeader .headCon_login > footer {
+              width: 100%;
+              height: 0.5rem;
+              display: flex; }
+              #app > div #section #My #MyHeader .headCon > footer p, #app > div #section #My #MyHeader .headCon_login > footer p {
+                width: 0.6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                #app > div #section #My #MyHeader .headCon > footer p span, #app > div #section #My #MyHeader .headCon_login > footer p span {
+                  flex: 1;
+                  color: #333; }
+                  #app > div #section #My #MyHeader .headCon > footer p span:nth-of-type(2), #app > div #section #My #MyHeader .headCon_login > footer p span:nth-of-type(2) {
+                    color: #333; }
+                #app > div #section #My #MyHeader .headCon > footer p:nth-of-type(3), #app > div #section #My #MyHeader .headCon_login > footer p:nth-of-type(3) {
+                  flex: 1;
+                  display: flex;
+                  align-items: flex-end;
+                  margin-right: 0.2rem;
+                  color: #333; }
+        #app > div #section #My #MyContent {
+          width: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+          #app > div #section #My #MyContent .containCon {
+            width: 100%;
+            flex: 1;
+            background-color: #efefef; }
+            #app > div #section #My #MyContent .containCon .shoppingInfo {
+              margin-top: 0.2rem;
+              margin-bottom: 0.1rem;
+              height: 1.4rem;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              overflow: hidden; }
+              #app > div #section #My #MyContent .containCon .shoppingInfo li {
+                position: relative;
+                width: 33%;
+                height: 0.7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                margin-bottom: 0.02rem; }
+                #app > div #section #My #MyContent .containCon .shoppingInfo li i {
+                  margin-bottom: 0.1rem; }
+            #app > div #section #My #MyContent .containCon .say {
+              width: 100%;
+              height: 0.3rem;
+              line-height: 0.3rem;
+              text-indent: 0.1rem; }
+            #app > div #section #My #MyContent .containCon .userSet {
+              width: 100%;
+              height: 1.8rem; }
+              #app > div #section #My #MyContent .containCon .userSet li {
+                width: 100%;
+                height: 0.5rem;
+                display: flex;
+                justify-content: center;
+                background-color: #fff; }
+                #app > div #section #My #MyContent .containCon .userSet li i.iconfont {
+                  display: inline-block;
+                  width: 0.4rem;
+                  height: 0.5rem;
+                  text-align: center;
+                  line-height: 0.5rem; }
+                #app > div #section #My #MyContent .containCon .userSet li span {
+                  display: inline-block;
+                  flex: 1;
+                  line-height: 0.5rem;
+                  align-items: flex-start; }
+                #app > div #section #My #MyContent .containCon .userSet li:nth-of-type(1) {
+                  margin-bottom: 0.2rem; }
+      #app > div #section #loginCon {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        #app > div #section #loginCon .loginHeader {
+          width: 100%;
+          height: 0.45rem;
+          display: flex;
+          justify-content: center;
+          background: #333; }
+          #app > div #section #loginCon .loginHeader li {
+            width: 0.6rem;
+            height: 0.45rem;
+            line-height: 0.45rem;
+            text-align: center;
+            font-size: 0.18rem;
+            color: #fff; }
+            #app > div #section #loginCon .loginHeader li:nth-of-type(2) {
+              flex: 1;
+              font-size: 0.2rem; }
+            #app > div #section #loginCon .loginHeader li:nth-of-type(1) span.iconfont {
+              font-size: 0.24rem; }
+        #app > div #section #loginCon .loginContent {
+          width: 100%;
+          height: 2.5rem; }
+          #app > div #section #loginCon .loginContent .loginInfo {
+            margin: 0.3rem auto;
+            width: 90%;
+            height: 1.25rem;
+            border: 0.01rem solid #efefef;
+            border-radius: 2%; }
+            #app > div #section #loginCon .loginContent .loginInfo input {
+              width: 100%;
+              height: 0.6rem;
+              text-indent: 0.1rem;
+              border: 0;
+              font-size: 0.2rem;
+              outline: none; }
+              #app > div #section #loginCon .loginContent .loginInfo input:nth-of-type(1) {
+                border-bottom: 0.01rem solid #efefef; }
+          #app > div #section #loginCon .loginContent .toLogin {
+            font-size: 0.2rem;
+            margin-left: 5%;
+            width: 90%;
+            height: 0.6rem;
+            text-align: center;
+            background-color: #333;
+            color: #ccc;
+            border: 0;
+            outline: none; }
+      #app > div #section #RegisterCon {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        #app > div #section #RegisterCon .RegisterHeader {
+          width: 100%;
+          height: 0.45rem;
+          display: flex;
+          justify-content: center;
+          background: #333; }
+          #app > div #section #RegisterCon .RegisterHeader li {
+            width: 0.6rem;
+            height: 0.45rem;
+            line-height: 0.45rem;
+            text-align: center;
+            font-size: 0.18rem;
+            color: #fff; }
+            #app > div #section #RegisterCon .RegisterHeader li:nth-of-type(2) {
+              flex: 1;
+              font-size: 0.2rem; }
+            #app > div #section #RegisterCon .RegisterHeader li:nth-of-type(1) span.iconfont {
+              font-size: 0.24rem; }
+        #app > div #section #RegisterCon .RegisterContent {
+          width: 100%;
+          height: 3.1rem; }
+          #app > div #section #RegisterCon .RegisterContent .RegisterInfo {
+            margin: 0.3rem auto;
+            width: 95%;
+            height: 1.82rem;
+            border: 0.01rem solid #efefef;
+            border-radius: 2%; }
+            #app > div #section #RegisterCon .RegisterContent .RegisterInfo input {
+              width: 100%;
+              height: 0.6rem;
+              text-indent: 0.1rem;
+              font-size: 0.2rem;
+              border: 0;
+              border-bottom: 0.01rem solid #efefef;
+              outline: none; }
+              #app > div #section #RegisterCon .RegisterContent .RegisterInfo input:nth-of-type(3) {
+                border-bottom: none; }
+          #app > div #section #RegisterCon .RegisterContent .toRegister {
+            font-size: 0.2rem;
+            margin-left: 5%;
+            width: 90%;
+            height: 0.6rem;
+            text-align: center;
+            background-color: #333;
+            color: #ccc;
+            border: 0;
+            outline: none; }
+      #app > div #section #cartContent {
+        font-family: "微软雅黑";
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        #app > div #section #cartContent .mask {
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          position: fixed;
+          z-index: 9999 !important;
+          display: none; }
+          #app > div #section #cartContent .mask .maskShow {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0.8rem;
+            background: #fff; }
+            #app > div #section #cartContent .mask .maskShow div {
+              width: 100%; }
+              #app > div #section #cartContent .mask .maskShow div:nth-of-type(1) {
+                width: 90%;
+                padding: 0 5%;
+                height: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative; }
+                #app > div #section #cartContent .mask .maskShow div:nth-of-type(1):after {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 1px;
+                  bottom: 0;
+                  left: 0;
+                  background-color: #eee;
+                  transform-origin: 0 0;
+                  transform: scaleY(0.5); }
+                #app > div #section #cartContent .mask .maskShow div:nth-of-type(1) p:nth-of-type(2) span {
+                  display: inline-block;
+                  width: 0.2rem;
+                  height: 0.2rem;
+                  text-align: center;
+                  line-height: 0.2rem;
+                  border: 1px solid #eee; }
+              #app > div #section #cartContent .mask .maskShow div:nth-of-type(2) {
+                text-align: center;
+                line-height: 0.3rem; }
+        #app > div #section #cartContent .cartTop {
+          background: #333;
+          width: 94%;
+          height: 0.45rem;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          padding: 0 3%; }
+          #app > div #section #cartContent .cartTop i {
+            font-size: 0.24rem; }
+          #app > div #section #cartContent .cartTop p {
+            flex: 2;
+            font-size: 0.18rem;
+            text-align: center;
+            line-height: 0.45rem; }
+        #app > div #section #cartContent .cartCon {
+          flex: 1;
+          overflow-y: auto; }
+          #app > div #section #cartContent .cartCon .cartItem {
+            width: 100%;
+            height: 1rem;
+            position: relative; }
+            #app > div #section #cartContent .cartCon .cartItem .delItem {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 0.5rem;
+              height: 100%;
+              background: #fc3;
+              color: #fff;
+              font-size: 0.16rem;
+              text-align: center;
+              line-height: 1rem; }
+            #app > div #section #cartContent .cartCon .cartItem .itemInfo {
+              flex: 1;
+              width: 94%;
+              height: 100%;
+              padding: 0 3%;
+              color: #999;
+              position: absolute;
+              background: #fff; }
+              #app > div #section #cartContent .cartCon .cartItem .itemInfo .itemSelet {
+                height: 100%;
+                float: left;
+                display: flex;
+                align-items: center;
+                margin-right: 0.1rem; }
+              #app > div #section #cartContent .cartCon .cartItem .itemInfo .itemImg {
+                float: left;
+                width: 0.8rem;
+                margin-top: 0.1rem; }
+                #app > div #section #cartContent .cartCon .cartItem .itemInfo .itemImg img {
+                  width: 100%; }
+              #app > div #section #cartContent .cartCon .cartItem .itemInfo .otherInfo {
+                float: left;
+                width: 1.8rem;
+                margin-top: 0.1rem;
+                margin-left: 0.1rem; }
+                #app > div #section #cartContent .cartCon .cartItem .itemInfo .otherInfo p:nth-of-type(1) {
+                  display: -webkit-box;
+                  overflow: hidden;
+                  white-space: normal !important;
+                  text-overflow: ellipsis;
+                  word-wrap: break-word;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical; }
+                #app > div #section #cartContent .cartCon .cartItem .itemInfo .otherInfo p:nth-of-type(2) span {
+                  padding-right: 0.1rem; }
+                #app > div #section #cartContent .cartCon .cartItem .itemInfo .otherInfo p:nth-of-type(3) span {
+                  margin-left: 0.1rem; }
+                #app > div #section #cartContent .cartCon .cartItem .itemInfo .otherInfo p:nth-of-type(3) .iconstyle {
+                  color: #fc3; }
+            #app > div #section #cartContent .cartCon .cartItem:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #eee;
+              transform-origin: 0 0;
+              transform: scaleY(0.5); }
+        #app > div #section #cartContent .cartBottom {
+          width: 95%;
+          height: 0.5rem;
+          display: flex;
+          align-items: center;
+          border-top: 1px solid #eee;
+          padding-left: 5%; }
+          #app > div #section #cartContent .cartBottom > p {
+            width: 0.6rem;
+            margin-left: 0.1rem; }
+            #app > div #section #cartContent .cartBottom > p span {
+              padding-left: 0.1rem; }
+          #app > div #section #cartContent .cartBottom .countInfo {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end; }
+            #app > div #section #cartContent .cartBottom .countInfo div {
+              display: flex;
+              align-items: center; }
+              #app > div #section #cartContent .cartBottom .countInfo div p {
+                display: flex;
+                margin-right: 0.2rem; }
+                #app > div #section #cartContent .cartBottom .countInfo div p span:nth-child(2) {
+                  font-weight: bold; }
+            #app > div #section #cartContent .cartBottom .countInfo .countBtn {
+              width: 0.7rem;
+              height: 0.3rem;
+              font-size: 0.16rem;
+              margin-right: 0.1rem;
+              border: 1px solid #fc3;
+              color: #fc3;
+              text-align: center;
+              line-height: 0.3rem;
+              border-radius: 0.05rem; }
+      #app > div #section #orderContent {
+        font-family: "微软雅黑";
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: auto; }
+        #app > div #section #orderContent .orderTop {
+          background: #333;
+          width: 94%;
+          height: 0.45rem;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          padding: 0 3%; }
+          #app > div #section #orderContent .orderTop i {
+            font-size: 0.24rem; }
+          #app > div #section #orderContent .orderTop p {
+            flex: 2;
+            font-size: 0.18rem;
+            text-align: center;
+            line-height: 0.45rem; }
+        #app > div #section #orderContent .orderCon {
+          flex: 1;
+          overflow-y: auto; }
+          #app > div #section #orderContent .orderCon .cartItem {
+            width: 100%;
+            height: 1rem;
+            display: flex;
+            flex-direction: column;
+            position: relative; }
+            #app > div #section #orderContent .orderCon .cartItem .itemInfo {
+              flex: 1;
+              width: 94%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              padding: 0 3%;
+              color: #999;
+              background: #fff; }
+              #app > div #section #orderContent .orderCon .cartItem .itemInfo .itemImg {
+                width: 0.8rem;
+                height: 0.8rem; }
+              #app > div #section #orderContent .orderCon .cartItem .itemInfo .otherInfo {
+                flex: 1;
+                margin-left: 0.1rem; }
+                #app > div #section #orderContent .orderCon .cartItem .itemInfo .otherInfo p {
+                  line-height: 0.2rem; }
+                  #app > div #section #orderContent .orderCon .cartItem .itemInfo .otherInfo p:nth-of-type(1) {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    white-space: normal !important;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical; }
+            #app > div #section #orderContent .orderCon .cartItem:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              bottom: 0;
+              left: 0;
+              background-color: #eee;
+              transform-origin: 0 0;
+              transform: scaleY(0.5); }
+      #app > div #section #setCon {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        #app > div #section #setCon .setHeader {
+          width: 100%;
+          display: flex;
+          height: 0.45rem;
+          justify-content: center;
+          background: #333;
+          overflow: hidden; }
+          #app > div #section #setCon .setHeader li {
+            width: 0.6rem;
+            height: 0.45rem;
+            line-height: 0.45rem;
+            text-align: center;
+            font-size: 0.2rem;
+            color: #fff; }
+            #app > div #section #setCon .setHeader li:nth-of-type(2) {
+              flex: 1;
+              font-size: 0.18rem; }
+            #app > div #section #setCon .setHeader li:nth-of-type(1) span.iconfont {
+              font-size: 0.24rem; }
+        #app > div #section #setCon .setContent {
+          width: 100%;
+          flex: 1;
+          background: #efefef;
+          overflow: hidden; }
+          #app > div #section #setCon .setContent .userSet {
+            margin: 0.1rem auto 0;
+            width: 100%;
+            height: 2.55rem;
+            border: 0.01rem solid #efefef;
+            border-radius: 2%; }
+            #app > div #section #setCon .setContent .userSet li {
+              height: 0.5rem;
+              line-height: 0.5rem;
+              background: #fff;
+              display: flex;
+              border-top: 0.01rem solid #ccc; }
+              #app > div #section #setCon .setContent .userSet li span {
+                flex: 1;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                color: #333;
+                text-indent: 0.2rem; }
+              #app > div #section #setCon .setContent .userSet li i {
+                width: 0.5rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                text-align: center;
+                color: #eee; }
+              #app > div #section #setCon .setContent .userSet li:nth-of-type(2), #app > div #section #setCon .setContent .userSet li:nth-of-type(4) {
+                border-bottom: 0.01rem solid #ccc; }
+              #app > div #section #setCon .setContent .userSet li:nth-of-type(3) {
+                margin: 0.2rem 0;
+                border-bottom: 0.01rem solid #ccc; }
+          #app > div #section #setCon .setContent p {
+            width: 98%;
+            height: 0.4rem;
+            padding: 0.1rem 0;
+            margin: 0 1%;
+            background: #fff;
+            text-align: center; }
+          #app > div #section #setCon .setContent .toExit {
+            font-size: 0.16rem;
+            margin-left: 5%;
+            margin-top: 0.2rem;
+            width: 90%;
+            height: 0.5rem;
+            text-align: center;
+            background-color: #f00;
+            color: #fff;
+            border: 0;
+            outline: none;
+            border-radius: 5%; }
+      #app > div #section .care {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column; }
+        #app > div #section .care .careHeader {
+          width: 100%;
+          display: flex;
+          height: 0.45rem;
+          justify-content: center;
+          background: #333;
+          overflow: hidden; }
+          #app > div #section .care .careHeader li {
+            width: 0.4rem;
+            height: 0.45rem;
+            line-height: 0.45rem;
+            text-align: center;
+            font-size: 0.2rem;
+            color: #fff; }
+            #app > div #section .care .careHeader li:nth-of-type(2) {
+              flex: 1;
+              font-size: 0.18rem; }
+            #app > div #section .care .careHeader li:nth-of-type(1) span.iconfont {
+              font-size: 0.24rem; }
+        #app > div #section .care .careContent {
+          width: 100%;
+          flex: 1; }
+          #app > div #section .care .careContent .conListWrap {
+            width: 98%;
+            padding-left: 2%;
+            display: flex;
+            flex-direction: column; }
+            #app > div #section .care .careContent .conListWrap .conSection {
+              width: 97%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              padding: 0.07rem 2% 0.1rem 1%; }
+              #app > div #section .care .careContent .conListWrap .conSection .box1 {
+                margin-left: 0.2rem;
+                padding: 0.1rem 0;
+                flex: 1;
+                height: 0.4rem;
+                border-bottom: 1px solid #ccc;
+                display: flex; }
+              #app > div #section .care .careContent .conListWrap .conSection .condiv1 {
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 50%;
+                overflow: hidden; }
+                #app > div #section .care .careContent .conListWrap .conSection .condiv1 img {
+                  width: 100%; }
+              #app > div #section .care .careContent .conListWrap .conSection .condiv {
+                display: flex;
+                flex-direction: column; }
+                #app > div #section .care .careContent .conListWrap .conSection .condiv span {
+                  display: block;
+                  height: 0.24rem; }
+              #app > div #section .care .careContent .conListWrap .conSection .sp1 {
+                position: absolute;
+                display: block;
+                right: 0.1rem;
+                top: 0.15rem;
+                padding: 0.03rem 0.07rem;
+                border: 1px solid #ccc;
+                border-radius: 0.04rem;
+                color: #666; }
+    #app > div #footer {
+      width: 100%;
+      height: 0.5rem;
+      display: flex;
+      box-sizing: border-box;
+      border-top: 1px solid #999; }
+      #app > div #footer ul {
+        flex: 1;
+        display: flex;
+        justify-content: space-around; }
+        #app > div #footer ul li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 0.1rem;
+          font-size: 0.04rem; }
+          #app > div #footer ul li.active {
+            color: #fc3; }
+          #app > div #footer ul li .log {
+            font-size: 0.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.08rem;
+            margin-bottom: 0.07rem; }
+
+/*# sourceMappingURL=style.css.map */
